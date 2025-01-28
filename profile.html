@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile | Algorithm Tractor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-900 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-blue-700 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">Algorithm Tractor</h1>
+        <nav>
+          <ul class="flex gap-4">
+            <li>
+              <a href="add-topic.html" class="text-white hover:underline"
+                >Add New Topic</a
+              >
+            </li>
+            <li>
+              <a href="recent-topics.html" class="text-white hover:underline"
+                >View Recent Topics</a
+              >
+            </li>
+            <li>
+              <a href="profile.html" class="text-white hover:underline"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a href="home.html" class="text-white hover:underline">Logout</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Profile Content -->
+    <main class="container mx-auto p-8 flex-grow">
+      <h2 class="text-3xl font-bold mb-6">Your Profile</h2>
+
+      <!-- User Info Section -->
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md mb-6">
+        <h3 class="text-xl font-semibold mb-4">Personal Information</h3>
+        <p class="mb-2"><strong>Name:</strong> John Doe</p>
+        <p class="mb-2"><strong>Email:</strong> johndoe@example.com</p>
+        <p class="mb-2"><strong>Phone:</strong> +1 234 567 890</p>
+        <p class="mb-2">
+          <strong>Address:</strong> 123 Main Street, Cityville, CA 12345
+        </p>
+      </div>
+
+      <!-- Edit Profile Button -->
+      <div class="flex justify-center">
+        <a
+          href="edit-profile.html"
+          class="w-full text-center bg-blue-600 text-white py-3 rounded-lg shadow-md hover:bg-blue-700 transition-all"
+        >
+          Edit Profile
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-gray-100 py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 Algorithm Tractor. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

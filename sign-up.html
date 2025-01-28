@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Algorithm Tractor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .btn-hover:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="bg-blue-700 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">Algorithm Tractor</h1>
+        <nav></nav>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="flex flex-col items-center justify-center min-h-screen px-4">
+      <div class="text-center mb-8">
+        <h2 class="text-4xl font-bold mb-4">Sign Up for Algorithm Tractor</h2>
+        <p class="text-lg">
+          Create an account to start managing algorithm questions and solutions.
+        </p>
+      </div>
+
+      <!-- Sign Up Form -->
+      <div
+        class="bg-white text-gray-800 p-8 rounded-xl shadow-xl max-w-md w-full"
+      >
+        <h3 class="text-2xl font-semibold mb-4 text-center">Sign Up</h3>
+        <form id="signup-form" class="space-y-4">
+          <div>
+            <label for="name" class="block font-medium">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your full name"
+              class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" class="block font-medium">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <div>
+            <label for="password" class="block font-medium">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white py-2 rounded btn-hover hover:bg-blue-700 transition-transform duration-200"
+          >
+            Sign Up
+          </button>
+        </form>
+
+        <p class="text-sm text-center mt-4">
+          Already have an account?
+          <a href="home.html" class="text-blue-500 hover:underline">Login</a>
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-gray-100 py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 Algorithm Tractor. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // JavaScript for handling form submission
+      document.getElementById("signup-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        if (name && email && password) {
+          // Ideally, you would save the user data to the server here
+          // Simulating successful signup:
+
+          window.location.href = "dashboard.html"; // Redirect to Dashboard after successful signup
+        } else {
+          alert("Please fill in all fields.");
+        }
+      });
+    </script>
+  </body>
+</html>

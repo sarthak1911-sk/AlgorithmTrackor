@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recently Added Topics | Algorithm Tractor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-900 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-blue-700 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">Algorithm Tractor</h1>
+        <nav>
+          <ul class="flex gap-4">
+            <li>
+              <a href="dashboard.html" class="text-white hover:underline"
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="add-topic.html" class="text-white hover:underline"
+                >Add New Topic</a
+              >
+            </li>
+            <li><a href="#" class="text-white hover:underline">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-8 flex-grow">
+      <h2 class="text-3xl font-bold mb-6">Recently Added Topics</h2>
+
+      <div class="mb-6">
+        <input
+          type="text"
+          placeholder="Search topics..."
+          class="w-full p-2 border rounded"
+          id="search-bar"
+        />
+      </div>
+
+      <ul class="space-y-4">
+        <li class="flex justify-between items-center">
+          <span>Topic 1</span>
+          <div>
+            <a href="#" class="text-blue-500 hover:underline">View</a>
+            <a href="#" class="ml-4 text-blue-500 hover:underline">Edit</a>
+          </div>
+        </li>
+        <li class="flex justify-between items-center">
+          <span>Topic 2</span>
+          <div>
+            <a href="#" class="text-blue-500 hover:underline">View</a>
+            <a href="#" class="ml-4 text-blue-500 hover:underline">Edit</a>
+          </div>
+        </li>
+        <li class="flex justify-between items-center">
+          <span>Topic 3</span>
+          <div>
+            <a href="#" class="text-blue-500 hover:underline">View</a>
+            <a href="#" class="ml-4 text-blue-500 hover:underline">Edit</a>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-gray-100 py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 Algorithm Tractor. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

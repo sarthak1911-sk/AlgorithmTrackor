@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Algorithm Tractor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function redirectToActivity() {
+        const selectedActivity =
+          document.getElementById("activity-dropdown").value;
+        if (selectedActivity) {
+          window.location.href = selectedActivity;
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white text-gray-900 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-blue-700 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">Algorithm Tractor</h1>
+        <nav>
+          <ul class="flex gap-4">
+            <li>
+              <a href="profile.html" class="text-white hover:underline"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a href="home.html" class="text-white hover:underline">Logout</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-8 flex-grow">
+      <h2 class="text-3xl font-bold mb-6">Welcome to Your Dashboard</h2>
+
+      <!-- Recent Activity Section -->
+      <div class="bg-gray-100 p-4 rounded-lg shadow-md mb-6">
+        <h3 class="text-xl font-semibold mb-4">Recent Activity</h3>
+        <select
+          id="activity-dropdown"
+          class="w-full p-3 border rounded-lg mb-4"
+          onchange="redirectToActivity()"
+        >
+          <option value="">Select an Activity</option>
+          <option value="topic1.html">Topic 1</option>
+          <option value="topic2.html">Topic 2</option>
+          <option value="topic3.html">Topic 3</option>
+        </select>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex gap-4">
+        <a
+          href="add-topic.html"
+          class="w-full text-center bg-blue-600 text-white py-3 rounded-lg shadow-md hover:bg-blue-700 transition-all"
+        >
+          Add New Topic
+        </a>
+        <a
+          href="recent-topics.html"
+          class="w-full text-center bg-blue-600 text-white py-3 rounded-lg shadow-md hover:bg-blue-700 transition-all"
+        >
+          View Recent Topics
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-gray-100 py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 Algorithm Tractor. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
